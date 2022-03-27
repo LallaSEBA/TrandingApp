@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Tranding',
         color: colorTab,
+        debugShowCheckedModeBanner: false,
         home: const MyHomePage(),
         theme: ThemeData(
             colorScheme: ColorScheme.fromSwatch().copyWith(secondary: colorTab),

@@ -27,8 +27,6 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     super.initState();
     
     listTabs = context.read<ListItem>().listTabs;
-
-    listItemCtagory = context.watch<ListItem>().listItemCtegory;
     tabController = TabController(length: listTabs.length, vsync: this);
     tabController.addListener(() => currentIndex = tabController.index);
     
@@ -93,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     //listTabs = context.watch<ListItem>().listTabs;
-    //listItemCtagory = context.watch<ListItem>().listItemCtegory;
+    listItemCtagory = context.watch<ListItem>().listItemCtegory;
     double widthS  = MediaQuery.of(context).size.width-10;
     double heightS = MediaQuery.of(context).size.height-30;
     double width2  = widthS / 2 - 20;
