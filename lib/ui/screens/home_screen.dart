@@ -53,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         title: const Text("Add Item into The Current Category"),
         content: SizedBox(
           height: MediaQuery.of(context).size.height*.35,
+          width:  MediaQuery.of(context).size.width-30,
           child: ListView(
               shrinkWrap: true,
               children: [
